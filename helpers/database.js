@@ -7,6 +7,7 @@ const pool = mysql
     host: process.env.MYSQL_DB_HOST,
     user: process.env.MYSQL_DB_USERNAME,
     database: process.env.MYSQL_DB,
+    password: process.env.MYSQL_DB_PASSWORD,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
