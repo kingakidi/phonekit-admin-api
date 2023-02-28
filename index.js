@@ -30,7 +30,7 @@ app.use("/auth", auth);
 app.use("/domains", domains);
 
 app.get("*", function (req, res) {
-  res.status(500).send("Invalid Endpoint");
+  res.status(401);
 });
 
 const PORT = process.env.PORT || 3000;
